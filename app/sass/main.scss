@@ -1,0 +1,27 @@
+@import "_custom.scss", "_placeholders.scss", "_header.scss" ;
+
+
+//Required bootstrap modules
+@import "../../node_modules/bootstrap/scss/_functions.scss",
+"../../node_modules/bootstrap/scss/_variables.scss",
+"../../node_modules/bootstrap/scss/_mixins.scss";
+
+//Optional bootstrap modules
+@import "../../node_modules/bootstrap/scss/_grid.scss";
+/*Add fonts*/
+
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url(../fonts/MyriadPro/MyriadPro-Regular.ttf) format('truetype');
+    src: url(../fonts/MyriadPro/MyriadPro-Regular.eot) format('embedded-opentype');
+    src: url(../fonts/MyriadPro/MyriadPro-Regular.woff) format('woff');
+};
+
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url(../fonts/MyriadPro/MyriadPro-Bold.ttf) format('truetype');
+    src: url(../fonts/MyriadPro/MyriadPro-Bold.eot) format('embedded-opentype');
+    src: url(../fonts/MyriadPro/MyriadPro-Bold.woff) format('woff');
+};
+
+@import "_header.scss" ;
