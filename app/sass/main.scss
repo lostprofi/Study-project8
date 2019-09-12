@@ -1,4 +1,4 @@
-@import "_custom.scss", "_placeholders.scss", "_header.scss" ;
+@import "_custom.scss", "_placeholders.scss";
 
 
 //Required bootstrap modules
@@ -24,4 +24,4 @@
     src: url(../fonts/MyriadPro/MyriadPro-Bold.woff) format('woff');
 };
 
-@import "_header.scss" ;
+@import "_header.scss", "_general.scss" ;
