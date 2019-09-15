@@ -1,4 +1,4 @@
-.navigation .navlist > a, .message .message-inner h1, .message .message-inner a {
+.navigation .navlist > a, .message .message-inner h1, .message .message-inner a, .daily_menu h1 {
   font-family: Myriad Pro Regular;
   font-style: italic;
   font-size: 12px;
@@ -755,8 +755,7 @@ nav {
     border: 20px solid white;
     position: absolute;
     z-index: 1;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     top: -50px;
     left: -80px;
     -webkit-box-sizing: border-box;
@@ -769,8 +768,7 @@ nav {
     border: 20px solid white;
     position: absolute;
     z-index: 1;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     top: -50px;
     right: -80px;
     -webkit-box-sizing: border-box;
@@ -813,8 +811,7 @@ nav {
       letter-spacing: 0.05em;
       background-color: #f1ac11;
       padding: 7px 38px 8px 38px;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
+      border-radius: 5px;
       margin-top: 14px; }
     .message .message-inner::after {
       content: "";
@@ -823,8 +820,7 @@ nav {
       border: 20px solid white;
       position: absolute;
       z-index: 1;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
+      border-radius: 50%;
       bottom: -80px;
       right: -50px;
       -webkit-box-sizing: border-box;
@@ -837,8 +833,7 @@ nav {
       border: 20px solid white;
       position: absolute;
       z-index: 1;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
+      border-radius: 50%;
       bottom: -80px;
       left: -50px;
       -webkit-box-sizing: border-box;
@@ -846,15 +841,38 @@ nav {
       clip: rect(auto, 100px, 50px, 50px); }
 
 .container {
-  padding: 0 137px; }
+  padding: 100px 137px; }
 
-figcaption {
+.daily_menu h1 {
+  color: #f1ac11;
+  font-size: 42px;
+  text-align: center;
+  word-spacing: 4px; }
+
+#check {
+  display: none; }
+  #check ~ label {
+    cursor: pointer; }
+  #check + label > img:first-child {
+    display: none; }
+  #check:checked + label > img:first-child {
+    display: inline; }
+  #check:checked + label > img:last-child {
+    display: none; }
+
+.col-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.figcaption_top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }

@@ -1,8 +1,58 @@
 .container {
-    padding: 0 137px;
+    padding: 100px 137px;
 }
 
-figcaption{
-    display: flex;
-    flex-flow: column nowrap;
+
+
+.daily_menu {
+    
+    h1 {
+        @extend %font;
+        color: rgb(241, 172, 17);
+        font-size: 42px;
+        text-align: center;
+        word-spacing: 4px;
+    }
+        
 }
+
+#check {
+    
+    display: none;
+    
+    ~ label {
+        cursor: pointer;
+    }
+    
+    +label >img:first-child{
+        display: none;
+    }
+    
+    &:checked +label >img:first-child{
+        display: inline;
+    }
+
+    &:checked +label >img:last-child{
+        display: none;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+.col-2 {
+    display: flex;
+}
+
+.figcaption_top {
+    display: flex;
+    flex-flow: row nowrap;
+}
+

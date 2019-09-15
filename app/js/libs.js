@@ -4,6 +4,10 @@ const veganBlock = document.querySelector('.vegan');
 const meatBlock = document.querySelector('.meat');
 const restarauntBlock = document.querySelector('.restaraunt');
 
+const pic1 = document.querySelector('#a');
+const pic2 = document.querySelector('#b');
+
+
 const headerBlocks = [[meatBlock, messageList[0]], [veganBlock, messageList[1]] , [restarauntBlock, messageList[2]]];
 
 
@@ -61,6 +65,11 @@ headerBlocks.forEach(el=>{
     }
     
 })
+
+
+
+
+
 
 /*headerBlocks.forEach(el=>{
     
