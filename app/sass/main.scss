@@ -8,6 +8,7 @@
 
 //Optional bootstrap modules
 @import "../../node_modules/bootstrap/scss/_grid.scss";
+
 /*Add fonts*/
 
 @font-face {
@@ -23,5 +24,9 @@
     src: url(../fonts/MyriadPro/MyriadPro-Bold.eot) format('embedded-opentype');
     src: url(../fonts/MyriadPro/MyriadPro-Bold.woff) format('woff');
 };
+
+//Add swiper styles
+
+@import "../../node_modules/swiper/src/swiper.scss", "../../node_modules/swiper/src/components/navigation/navigation.scss";
 
 @import "_header.scss", "_general.scss" ;
