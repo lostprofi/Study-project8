@@ -174,7 +174,7 @@ header {
 
 nav {
     
-    position: fixed;
+    position: absolute;
     background: transparent;
     height: 164px;
     top: 0;
@@ -332,6 +332,12 @@ nav {
             padding: 7px 38px 8px 38px;
             border-radius: 5px;
             margin-top: 14px;
+            
+            &:hover{
+               
+                    box-shadow: 0 2px 2px 0 rgb(180, 125, 0);
+                
+            }
            
         
         }
